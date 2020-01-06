@@ -1,0 +1,72 @@
+/* normalize */
+* {
+  padding: unset;
+  margin: unset;
+  border: unset;
+  outline: unset;
+  font-weight: 400;
+  font-family: 'Roboto-Regular', arial, sans-serif;
+  color: #000;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: unset;
+  font-weight: unset;
+}
+
+
+html,
+body {
+  height: 100%;
+  line-height: 1.2;
+}
+
+
+ul,
+ol,
+li,
+a,
+p,
+span,
+strong,
+i,
+em,
+div,
+section {
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+  margin: unset;
+}
+
+
+img {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+ul,
+ol,
+li,
+button{
+  display: block;
+}
+
+button,
+a {
+  cursor: pointer;
+}

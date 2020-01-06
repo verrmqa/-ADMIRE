@@ -1,0 +1,67 @@
+/* .section {
+  &__imagine {
+    display: none;
+  }
+} */
+body {
+  height: 350vh;
+}
+
+main {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.container {
+  max-width: 1230px;
+  margin: 0 auto;
+}
+
+.city {
+  position: relative;
+  height: 100%;
+}
+
+.city__parallax {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.city__background {
+  background: url(../assets/img/background.png) 0 0/100% no-repeat;
+}
+
+.city__bridge {
+  background: url(../assets/img/bridge.png) bottom center/100% no-repeat;
+}
+
+.city__hero {
+  background: url(../assets/img/hero-back.png) bottom center/30% no-repeat;
+}
+
+.city__house-right {
+  background: url(../assets/img/house_1.png) center right/30% no-repeat;
+}
+
+.city__house-center {
+  background: url(../assets/img/house_2.png) 80% 30%/30% no-repeat;
+}
+
+.city__house-left {
+  background: url(../assets/img/house_3.png) center left/30% no-repeat;
+}
+
+.city__lighters {
+  background: url(../assets/img/lighters.png) bottom right/30% no-repeat;
+}
+
+.city__moscow {
+  background: url(../assets/img/moscow-city.png) center left/30% no-repeat;
+}
+/*# sourceMappingURL=style.css.map */
