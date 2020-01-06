@@ -1,4 +1,4 @@
-$(document).ready(function() {
+/* $(document).ready(function() {
   $(window).scroll(function(event) {
     let s=$(this).scrollTop();
     let w=$(this).outerWidth();
@@ -14,4 +14,12 @@ $(document).ready(function() {
     $('.city__hero').css('transform', 'scale('+z_1+')')
   })
   
-}) 
+})  */
+
+/* 
+var rellax = new Rellax('.rellax'); */
+
+window.addEventListener('scroll', function(e) {
+  const target = document.querySelector('.city__hero');
+  console.log(target.style);
+})
