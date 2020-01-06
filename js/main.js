@@ -19,7 +19,27 @@
 /* 
 var rellax = new Rellax('.rellax'); */
 
-window.addEventListener('scroll', function(e) {
-  const target = document.querySelector('.city__hero');
-  console.log(target.style);
+window.addEventListener('scroll', function() {
+
+  console.log(window.pageYOffset)
+  //отсчет скролла
+  let scrolled = window.pageYOffset;
+
+
+  //трансформации героя
+  const hero = document.querySelector('.city__hero');
+
+  let moveRate = scrolled * 0.5;
+  let heroScaleRate = 1-((scrolled-1000) * 0.0005);
+
+  if (window.pageYOffset < '1000')
+    hero.style.transform = 'translate3d(0px, '+moveRate+'px, 0px) scale(1)';
+    else 
+    hero.style.transform = 'translate3d(0px, '+moveRate+'px, 0px) scale('+heroScaleRate+')';
+  
+  //трансформации фона
+  const background = document.querySelector('.city__background');
+
+  background.style.transform = 'translate3d(0px, '+moveRate+'px, 0px) scale(0.75)';
+
 })
