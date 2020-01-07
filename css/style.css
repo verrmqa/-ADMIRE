@@ -60,133 +60,54 @@ main {
 }
 
 .city__parallax {
-  /* 
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0; */
   position: absolute;
 }
 
 .city__background {
-  /* 
-    background: url(../assets/img/background.png) 0 0 / 100% no-repeat; */
   top: -20%;
-  left: 14%;
+  left: 23%;
   -webkit-transform: scale(0.75);
           transform: scale(0.75);
 }
 
 .city__bridge {
-  /* 
-    background: url(../assets/img/bridge.png) bottom center / 100% no-repeat; */
-  top: 128%;
-  left: 13%;
+  top: 102%;
+  left: 7%;
   -webkit-transform: scale(0.95);
           transform: scale(0.95);
 }
 
 .city__hero {
-  /* 
-    background: url(../assets/img/hero-back.png) bottom center / 30% no-repeat; */
   top: 10%;
   left: 10%;
 }
 
 .city__house-right {
-  /* 
-    background: url(../assets/img/house_1.png) center right/ 30% no-repeat; */
-  right: -5%;
+  right: -17%;
   top: 70%;
 }
 
 .city__house-center {
-  /* 
-    background: url(../assets/img/house_2.png) 80% 30% / 30% no-repeat; */
-  right: 15%;
+  right: 0%;
   top: 25%;
 }
 
 .city__house-left {
-  /* 
-    background: url(../assets/img/house_3.png) center left / 30% no-repeat; */
-  top: 123%;
-  left: 19.5%;
+  top: 82%;
+  left: 15%;
   -webkit-transform: scale(0.8);
           transform: scale(0.8);
 }
 
 .city__lighters {
-  /* 
-    background: url(../assets/img/lighters.png) bottom right/ 30% no-repeat; */
-  right: 17%;
-  top: 111%;
+  right: -10%;
+  top: 102%;
 }
 
 .city__moscow {
-  /* 
-    background: url(../assets/img/moscow-city.png) center left / 30% no-repeat; */
+  top: 26%;
+  left: 3%;
   -webkit-transform: scale(0.6);
           transform: scale(0.6);
 }
-
-/*  .city {
-
-    
-    &__parallax {
-    }
-  
-    &__background {
-    position: absolute;
-    top: 45%;
-    left: 24%;
-    transform: scale(0.75);
-    }
-    &__bridge {/
-    position: absolute;
-    top: 128%;
-    left: 13%;
-    transform: scale(0.95);
-  
-    }
-    &__hero {
-    position: absolute; 
-    transform: scale(0.5);
-  
-    }
-    &__house-right {
-    position: absolute;
-    right: 11%;
-    top: 25%;
-  
-    }
-    &__house-center {
-    position: absolute;
-    right: 20.8%;
-    top: 29%;
-    transform: scale(0.95);
-  
-    }
-    &__house-left {
-  
-    position: absolute;
-    top: 123%;
-    left: 19.5%;
-    transform: scale(0.8);
-    }
-    &__lighters {
-    position: absolute;
-    right: 17%;
-    top: 111%;
-  
-    }
-    &__moscow {
-    position: absolute;
-    top: 46%;
-    -webkit-transform: scale(0.7);
-    transform: scale(0.6);
-    left: 12%;
-    }
-  }  */
 /*# sourceMappingURL=style.css.map */

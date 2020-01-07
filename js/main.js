@@ -22,24 +22,62 @@ var rellax = new Rellax('.rellax'); */
 window.addEventListener('scroll', function() {
 
   console.log(window.pageYOffset)
+
   //отсчет скролла
-  let scrolled = window.pageYOffset;
+  const scrolled = window.pageYOffset;
 
 
-  //трансформации героя
-  const hero = document.querySelector('.city__hero');
 
-  let moveRate = scrolled * 0.5;
-  let heroScaleRate = 1-((scrolled-1000) * 0.0005);
+  //переменные движения
+/*   const backgroundMoveRate = scrolled * 0.4;
+  const heroMoveRate = scrolled * 0.4;
+  const moscowMoveRate = scrolled * 0.25;
+  const lightersMoveRate = scrolled * 0.001; */
+  const backgroundMoveRate = scrolled * 0.4;
+  const heroMoveRate = scrolled * 0.35;
+  const moscowMoveRate = scrolled * 0.12;
+  const lightersMoveRate = scrolled * 0.2;
 
-  if (window.pageYOffset < '1000')
-    hero.style.transform = 'translate3d(0px, '+moveRate+'px, 0px) scale(1)';
-    else 
-    hero.style.transform = 'translate3d(0px, '+moveRate+'px, 0px) scale('+heroScaleRate+')';
-  
+  //переменные увеличения
+/*   const heroScaleRate = 1-((scrolled-500) * 0.0005);
+  const moscowScaleRate = 1-(scrolled * 0.0003);
+  const lightersScaleRate = 1+(scrolled * 0.0001); */
+  const heroScaleRate = 1-((scrolled-500) * 0.0005);
+  const moscowScaleRate = 1-(scrolled * 0.00025);
+  const houseRightScaleRate = 1+(scrolled * 0.0002);
+  const lightersScaleRate = 0.6+(scrolled * 0.0002);
+
   //трансформации фона
   const background = document.querySelector('.city__background');
+  background.style.transform = 'translate3d(0px, '+backgroundMoveRate+'px, 0px) scale(0.75)';
+  
+  //трансформации героя
+  const hero = document.querySelector('.city__hero');
+  if (window.pageYOffset < '500')
+    hero.style.transform = 'translate3d(0px, '+heroMoveRate+'px, 0px) scale(1)';
+    else 
+    hero.style.transform = 'translate3d(0px, '+heroMoveRate+'px, 0px) scale('+heroScaleRate+')';
+  
+  //трансформация заднего ряда домов
+  const moscow = document.querySelector('.city__moscow');
+  moscow.style.transform = 'translate3d(0px, '+moscowMoveRate+'px, 0px) scale('+moscowScaleRate+')';
 
-  background.style.transform = 'translate3d(0px, '+moveRate+'px, 0px) scale(0.75)';
+  const houseCenter = document.querySelector('.city__house-center');
+  houseCenter.style.transform = 'translate3d(0px, '+moscowMoveRate+'px, 0px) scale('+moscowScaleRate+')';
+
+  const houseLeft = document.querySelector('.city__house-left');
+  houseLeft.style.transform = 'translate3d(0px, '+moscowMoveRate+'px, 0px)';
+
+  //трансформация моста
+
+
+  //трансформация переднего ряда
+  const houseRight = document.querySelector('.city__house-right');
+  houseRight.style.transform = 'translate3d(0px, -'+lightersMoveRate+'px, 0px) scale('+houseRightScaleRate+')';
+  
+
+
+  const lighters = document.querySelector('.city__lighters');
+  lighters.style.transform = 'translate3d(0px, -'+moscowMoveRate+'px, 0px) scale('+lightersScaleRate+')';
 
 })
