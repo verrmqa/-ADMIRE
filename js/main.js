@@ -1,36 +1,30 @@
-window.addEventListener('load', () => {
-  const preloader = document.querySelector('.preloader');
-  preloader.classList.add('preloader--finished');
 
-  const city = document.querySelector('.city');
-  city.style.display = 'block'
+//прелоадер
 
-  console.log(preloader);
-})
+  
+  window.setTimeout(function () {
+    const preloader = document.querySelector('.preloader');
+    preloader.classList.add('preloader--finished');
+  
+    const city = document.querySelector('.city');
+    city.style.display = 'block';
+  }, 1000);
 
+
+
+//анимации
 window.addEventListener('scroll', () => {
-
-  console.log(window.pageYOffset)
 
   //отсчет скролла
   const scrolled = window.pageYOffset;
 
-
-
   //переменные движения
-/*   const backgroundMoveRate = scrolled * 0.4;
-  const heroMoveRate = scrolled * 0.4;
-  const moscowMoveRate = scrolled * 0.25;
-  const lightersMoveRate = scrolled * 0.001; */
   const backgroundMoveRate = scrolled * 0.4;
   const heroMoveRate = scrolled * 0.35;
   const moscowMoveRate = scrolled * 0.12;
   const lightersMoveRate = scrolled * 0.2;
 
   //переменные увеличения
-/*   const heroScaleRate = 1-((scrolled-500) * 0.0005);
-  const moscowScaleRate = 1-(scrolled * 0.0003);
-  const lightersScaleRate = 1+(scrolled * 0.0001); */
   const heroScaleRate = 1-((scrolled-500) * 0.0005);
   const moscowScaleRate = 1-(scrolled * 0.00025);
   const houseRightScaleRate = 1+(scrolled * 0.0002);
@@ -57,16 +51,17 @@ window.addEventListener('scroll', () => {
   const houseLeft = document.querySelector('.city__house-left');
   houseLeft.style.transform = 'translate3d(0px, '+moscowMoveRate+'px, 0px)';
 
-  //трансформация моста
-
-
   //трансформация переднего ряда
   const houseRight = document.querySelector('.city__house-right');
   houseRight.style.transform = 'translate3d(0px, -'+lightersMoveRate+'px, 0px) scale('+houseRightScaleRate+')';
-  
-
 
   const lighters = document.querySelector('.city__lighters');
   lighters.style.transform = 'translate3d(0px, -'+moscowMoveRate+'px, 0px) scale('+lightersScaleRate+')';
 
 })
+
+
+//анимация чисел в секции статистики
+
+$('.text--imagine_number').animateNumber({ number: 100 });
+
