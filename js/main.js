@@ -1,25 +1,14 @@
-/* $(document).ready(function() {
-  $(window).scroll(function(event) {
-    let s=$(this).scrollTop();
-    let w=$(this).outerWidth();
-    let h=$('.imagine').outerHeight();
-    let h_b=$('.city__parallax').outerHeight();
+window.addEventListener('load', () => {
+  const preloader = document.querySelector('.preloader');
+  preloader.classList.add('preloader--finished');
 
-    let p = s/h*100;
-    let p_b = s/h_b*100;
-    let o = 1-1/100*p_b;
+  const city = document.querySelector('.city');
+  city.style.display = 'block'
 
-    let z_1=1+(w/100000*p_b)
+  console.log(preloader);
+})
 
-    $('.city__hero').css('transform', 'scale('+z_1+')')
-  })
-  
-})  */
-
-/* 
-var rellax = new Rellax('.rellax'); */
-
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', () => {
 
   console.log(window.pageYOffset)
 

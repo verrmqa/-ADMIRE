@@ -21,6 +21,24 @@ main {
   font-size: 40px;
 }
 
+.preloader {
+  position: fixed;
+  z-index: 5000;
+  top: 0;
+  left: -0.5%;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 214px;
+  background: #fff;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.preloader--finished {
+  opacity: 0;
+  pointer-events: none;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -55,6 +73,7 @@ main {
 }
 
 .city {
+  display: none;
   position: relative;
   height: 100vh;
 }

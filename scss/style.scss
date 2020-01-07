@@ -24,14 +24,31 @@ main {
   }
 }
 
+.preloader {
+  position: fixed;
+  z-index: 5000;
+  top: 0;
+  left: -0.5%;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 214px;
+  background: #fff;
+  transition: opacity 0.3s ease;
+}
+.preloader--finished {
+  opacity: 0;
+  pointer-events: none;
+}
+
 
 .header {
   display: flex;
   justify-content: space-between;
   padding: 5% 0 10% 0;
 }
+
+
 .imagine {
-  
   display: flex;
   justify-content: center;
   position: relative;
@@ -49,63 +66,47 @@ main {
   margin: 0 auto;
 }
 
-
 .city {
+  display: none;
   position: relative;
   height: 100vh;
-  
   &__parallax {
-    
-  position: absolute;
+    position: absolute;
   }
-
   &__background {
     top: -20%;
     left: 23%;
-  transform: scale(0.75);
+    transform: scale(0.75);
   }
   &__bridge {
     top: 102%;
     left: 7%;
     transform: scale(0.95);
-
   }
   &__hero {
     top: 10%;
     left: 10%;
-
   }
   &__house-right {
     right: -17%;
     top: 70%;
-
   }
   &__house-center {
     right: 0%;
     top: 25%;
-
   }
   &__house-left {
-  top: 82%;
-  left: 15%;
-  transform: scale(0.8);
+    top: 82%;
+    left: 15%;
+    transform: scale(0.8);
   }
   &__lighters {
     right: -10%;
     top: 102%;
-
   }
   &__moscow {
     top: 26%;
     left: 3%;
- 
-  transform: scale(0.6);
+    transform: scale(0.6);
   }
 }
-
-
-
-
-
-
-
