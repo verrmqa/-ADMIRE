@@ -1,28 +1,36 @@
-/* .section {
-  &__imagine {
-    display: none;
-  }
-} */
-/* 
-body {
-  height: 350vh;
-} */
-/* 
-main {
-  
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  
-} */
+
 
 .text {
   &--imagine {
     font-size: 40px;
   }
 }
+.title {
+  &--hero {
+    font-weight: 900;
+  }
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.audio {
+  &_btn {
+    position: fixed;
+    z-index: 5000;
+    bottom: 20%;
+    left: 15%;
+    #audioBtn {
+      width: 0;
+    }
+  }
+  &_pic {
+    height: 50px;
+  }
+}
+
 
 .preloader {
   position: fixed;
@@ -31,9 +39,9 @@ main {
   left: -0.4%;
   width: 100vw;
   height: 100vh;
-  padding-top: 214px;
+  padding-top: 233px;//214
   background: #fff;
-  transition: opacity 0.3s ease;
+  transition: opacity 1s ease;
 }
 .preloader--finished {
   opacity: 0;
@@ -59,11 +67,6 @@ main {
     font-weight: bold;
     font-size: 35px;
   }
-}
-
-.container {
-  max-width: 1300px;
-  margin: 0 auto;
 }
 
 .city {
@@ -107,6 +110,5 @@ main {
   &__moscow {
     top: 26%;
     left: 3%;
-    transform: scale(0.6);
   }
 }

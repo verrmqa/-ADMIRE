@@ -10,6 +10,22 @@
   </head>
   <body>
 
+    <!-- audio -->
+    <audio
+      class="audio"
+      id="player"
+      src="./assets/audio/gorod.wav"
+      preload="auto"
+      loop
+      autoplay
+    ></audio>
+    <div class="audio_btn">
+      <button id="audioBtn">
+        <img class="audio_pic" src="./assets/img/speaker.png" alt="" />
+      </button>
+    </div>
+
+    <!-- preloader -->
     <div class="preloader">
       <div class="section section__imagine">
         <div class="container">
@@ -18,7 +34,9 @@
               <img src="./assets/img/imagine.png" alt="" />
             </div>
             <div class="imagine__text">
-              <p class="text text--imagine"><span class="text text--imagine_number">0</span> идей</p>
+              <p class="text text--imagine">
+                <span class="text text--imagine_number">0</span> идей
+              </p>
               для твоего проекта
             </div>
           </div>
@@ -26,6 +44,7 @@
       </div>
     </div>
 
+    <!-- header -->
     <header>
       <div class="container">
         <div class="header">
@@ -33,7 +52,9 @@
             KNOW-WOW формат
           </div>
           <div class="header__hero">
-            стать героем
+            <a href="">
+              <h1 class="title title--hero">Cтать героем</h1>
+            </a>
           </div>
           <a href="tel:+79169966328" class="header__phone">
             +7 (916) 996-63-28
@@ -41,6 +62,8 @@
         </div>
       </div>
     </header>
+    
+    <!-- main -->
     <main>
       <div class="section section__imagine">
         <div class="container">
